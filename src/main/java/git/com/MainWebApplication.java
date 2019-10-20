@@ -13,6 +13,11 @@ public class MainWebApplication {
     public String greeting() {
         return "Hello World!";
     }
+    
+    @RequestMapping("/welcome")
+    public String greeting2() {
+        return "welcome!";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(MainWebApplication.class, args);
